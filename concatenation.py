@@ -1,15 +1,15 @@
-def Full_name(first_name="first name",last_name='last name'):# Here i have created Full name method by passing arguments first name and last name 
-    return first_name+' '+last_name # Here i have conacatinted both first name and last name which i have returned it as a string to the function
-first_name=input("Enter your first name:/n")# Used input function to accept a string from the user and stored in a variable
+def Full_name(first_name="first name",last_name='last name'):# create Full name by passing arguments first name and last name 
+    return first_name+' '+last_name #  conacatinte both first name and last name and return to string
+first_name=input("Enter your first name:/n")# input fuction to take input from user
 last_name=input("Enter your last name:/n")
-full_name=Full_name(first_name,last_name)#passed variables to the function
-print(full_name)
+full_name=Full_name(first_name,last_name)
+print(full_name) # print full name
 
 def string_alternative(string):
     o=''
-    for i in range(0,len(string)):
+    for i in range(0,len(string)): # iterate loop from 0 to length of string
         if(i%2==0):
-            o=o+string[i]
+            o=o+string[i] # add null string to index of string
     return o
 
-print(string_alternative('Good evening'))
+print(string_alternative('Good evening')) #print the result
